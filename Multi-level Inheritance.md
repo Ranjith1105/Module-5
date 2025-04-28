@@ -37,12 +37,67 @@ To write a Python program to get the name, age, and ID of a person and display t
 ---
 
 ### PROGRAM
-
+Reg No: 212223020021
+Name: Ranjith P
 ```
+# Base class
+class Person:
+    def __init__(self):
+        self.name = ""
+
+    def get_name(self):
+        self.name = input("Enter name: ")
+
+    def display_name(self):
+        print("Name:", self.name)
+
+
+# Derived class from Person
+class Age(Person):
+    def __init__(self):
+        super().__init__()
+        self.age = 0
+
+    def get_age(self):
+        self.age = int(input("Enter age: "))
+
+    def display_age(self):
+        print("Age:", self.age)
+
+
+# Derived class from Age (multilevel inheritance)
+class ID(Age):
+    def __init__(self):
+        super().__init__()
+        self.id = ""
+
+    def get_id(self):
+        self.id = input("Enter ID: ")
+
+    def display_id(self):
+        print("ID:", self.id)
+
+    def display_all(self):
+        self.display_name()
+        self.display_age()
+        self.display_id()
+
+
+# Create object of the final derived class
+person = ID()
+person.get_name()
+person.get_age()
+person.get_id()
+
+print("\n--- Person Details ---")
+person.display_all()
 
 
 ```
 
 ### OUTPUT
+![Screenshot 2025-04-28 204140](https://github.com/user-attachments/assets/c2eed383-1710-4715-af6c-3182d0d83cc9)
+
 
 ### RESULT
+The program successfully demonstrates multilevel inheritance by collecting and displaying a person's name, age, and ID using a class hierarchy in Python.
