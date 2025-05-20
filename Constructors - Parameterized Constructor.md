@@ -11,11 +11,17 @@ To write a Python program using a class to perform the addition of two numbers u
 ### ALGORITHM
 
 1.Begin the program.
+
 2.Define a class named Addition.
+
 3.Create a parameterized constructor __init__(self, a, b) to initialize two numbers.
+
 4.Define a method add(self) to perform the addition of the two numbers.
+
 5.In the main part of the program, create an object of the class by passing two numbers as arguments.
+
 6.Call the add() method to display the result.
+
 7.End the program.
 
 ---
