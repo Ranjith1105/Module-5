@@ -11,15 +11,25 @@ To write a Python program to get the name, age, and ID of a student and check if
 ### ALGORITHM
 
 1.Begin the program.
+
 2.Create a class Person to get and store the student's name and age.
+
 3.Create another class StudentID to get and store the student ID.
+
 4.Create a derived class Student that inherits from both Person and StudentID.
+
 5.In the Student class, define a method is_valid() to check the following:
+
        -Name is not empty.
+       
        -Age is greater than 0.
+       
        -ID is alphanumeric and not empty.
+       
 6.Create an object of the Student class and input details.
+
 7.Call the is_valid() method to check and print whether the student is valid.
+
 8.End the program.
 
 ---
